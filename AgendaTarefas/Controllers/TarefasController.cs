@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using static System.Net.WebRequestMethods;
 
 namespace AgendaTarefas.Controllers
@@ -40,5 +41,63 @@ namespace AgendaTarefas.Controllers
 
             return listaDatas;
         }
+
+        [HttpGet]
+        public IActionResult CriarTarefa(string dataTarefa)
+        {
+            Tarefa tarefa = new Tarefa
+            {
+                Data = dataTarefa
+            };
+
+            return View(tarefa);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CriarTarefa(Tarefa tarefa)
+        {
+            if(ModelState.IsValid)
+            {
+                _contexto.Tarefas.Add(tarefa);
+                await _contexto.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(tarefa);
+        }
+        [HttpGet]
+        public async Task<IActionResult> AtualizarTarefa(int tarefaId)
+        {
+            Tarefa tarefa = await _contexto.Tarefas.FindAsync(tarefaId);
+
+            if(tarefa == null)
+                return NotFound();
+
+            return View(tarefa);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AtualizarTarefa(Tarefa tarefa)
+        {
+            if(ModelState.IsValid)
+            {
+                _contexto.Update(tarefa);
+                await _contexto.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(tarefa);
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> ExcluirTarefa(int tarefaId)
+        {
+            Tarefa tarefa = await _contexto.Tarefas.FindAsync(tarefaId);
+            _contexto.Tarefas.Remove(tarefa);
+            await _contexto.SaveChangesAsync();
+            return Json(true);
+
+        }
+
     }
 }
