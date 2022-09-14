@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace AgendaTarefas.Models
+
+    // Criando as classes
 {
     public class Tarefa
     {

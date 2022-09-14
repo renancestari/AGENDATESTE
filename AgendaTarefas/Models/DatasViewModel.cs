@@ -1,4 +1,7 @@
 ﻿namespace AgendaTarefas.Models
+
+    // Configurado para auxiliar na manipulação das datas
+
 {
     public class DatasViewModel
     {

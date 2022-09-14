@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
+// Configuração do banco de dados
+
 namespace AgendaTarefas.Migrations
 {
     public partial class criacaoBD : Migration

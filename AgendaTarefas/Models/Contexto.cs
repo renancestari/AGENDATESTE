@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
+// Manipulação das tabelas
+
 namespace AgendaTarefas.Models
 {
     public class Contexto : DbContext

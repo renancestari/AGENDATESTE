@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using static System.Net.WebRequestMethods;
 
+// Controladores da criação das tarefas
+
 namespace AgendaTarefas.Controllers
 {
     public class TarefasController : Controller
@@ -42,6 +44,8 @@ namespace AgendaTarefas.Controllers
             return listaDatas;
         }
 
+        // Configurado para criar tarefa
+
         [HttpGet]
         public IActionResult CriarTarefa(string dataTarefa)
         {
@@ -65,6 +69,9 @@ namespace AgendaTarefas.Controllers
 
             return View(tarefa);
         }
+
+        // Configurado para atualizar tarefa
+
         [HttpGet]
         public async Task<IActionResult> AtualizarTarefa(int tarefaId)
         {
@@ -88,6 +95,8 @@ namespace AgendaTarefas.Controllers
 
             return View(tarefa);
         }
+
+        // Configurado para excluir tarefa
 
         [HttpPost]
         public async Task<JsonResult> ExcluirTarefa(int tarefaId)

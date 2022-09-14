@@ -4,6 +4,8 @@
     ViewData["Title"] = "Tarefas Cadastradas";
 }
 
+<!-- Configurado para Criar tarefas -->
+
 @foreach(var item in Model)
 {
     <div class="accordion" id="painelTarefas">
@@ -23,12 +25,14 @@
 
             <div id="@item.Identificadores" class="collapse show" data-parent="#painelTarefas">
                 <div class="card-body">
-                    @await Component.InvokeAsync("ListaTaferas", item.Datas)
+                    @await Component.InvokeAsync("ListaTarefas", item.Datas)
                 </div>
             </div>
         </div>
     </div>
 }
+
+<!-- Configurado para excluir tarefas -->
 
 <div class="modal" tabindex="-1">
     <div class="modal-dialog">

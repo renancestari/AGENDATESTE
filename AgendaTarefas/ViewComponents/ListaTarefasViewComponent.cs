@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 
+// Configurado para processar dados
+
 namespace AgendaTarefas.ViewComponents
 {
     public class ListaTarefasViewComponent : ViewComponent

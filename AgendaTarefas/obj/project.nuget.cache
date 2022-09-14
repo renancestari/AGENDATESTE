@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uvZEZ6rAs6ErCD8jQ8fG9HqB9q3PZF/2O4zYf3QUGb0hLePsIP5lngqykVnESXsIG3rA8zzU1kWrRbi088qP0w==",
+  "dgSpecHash": "cIq+rSeIiE684UaoRoneEAx32U+xh4+tEaV5PTz3rPxq+N2n/D8S6IPMTKrg0kDg/+jUevg2MpbxI+BtkjQWmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Renan\\Desktop\\AgendaTESTE\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
+  "projectFilePath": "C:\\Users\\Renan\\Desktop\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Renan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Renan\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

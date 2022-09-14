@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Renan\\Desktop\\AgendaTESTE\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj": {}
+    "C:\\Users\\Renan\\Desktop\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Renan\\Desktop\\AgendaTESTE\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj": {
+    "C:\\Users\\Renan\\Desktop\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Renan\\Desktop\\AgendaTESTE\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
+        "projectUniqueName": "C:\\Users\\Renan\\Desktop\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
         "projectName": "AgendaTarefas",
-        "projectPath": "C:\\Users\\Renan\\Desktop\\AgendaTESTE\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
+        "projectPath": "C:\\Users\\Renan\\Desktop\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
         "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Renan\\Desktop\\AgendaTESTE\\AgendaTarefas\\AgendaTarefas\\obj\\",
+        "outputPath": "C:\\Users\\Renan\\Desktop\\AgendaTarefas\\AgendaTarefas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
